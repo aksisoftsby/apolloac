@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% seo %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+  </script>
+
+  <link rel="shortcut icon" href="{{ site.cdn }}img/favicon.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+  <!-- <link rel="stylesheet" href="{{ site.url }}/css/plugins.css" /> -->
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/owl.carousel.min.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/animate.min.css" />
+  <link rel="stylesheet" href="{{ site.url }}/css/plugins/themify-icons.css" />
+  <link rel="stylesheet" href="{{ site.url }}/css/plugins/flaticon.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/magnific-popup.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/YouTubePopUp.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/select2.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/datepicker.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/plugins/vegas.slider.min.css" />
+  <link rel="stylesheet" href="{{ site.cdn }}css/style.css" />
+
+</head>
+
+<body>
+
+  {% include themes/header_nav_cappa.html %}
+  {% if page.is_home %}
+  {% include themes/header_slide_cappa.html %}
+  {% else %}
+  {% include themes/header_title_cappa.html %}
+  {% endif %}
+  {{ content }}
+  {% include themes/_footer.html %}
+
+  <script src="{{ site.cdn }}js/jquery-3.6.0.min.js"></script>
+  <script src="{{ site.cdn }}js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="{{ site.cdn }}js/modernizr-2.6.2.min.js"></script>
+  <script src="{{ site.cdn }}js/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ site.cdn }}js/jquery.isotope.v3.0.2.js"></script>
+  <script src="{{ site.cdn }}js/pace.js"></script>
+  <script src="{{ site.cdn }}js/popper.min.js"></script>
+  <script src="{{ site.cdn }}js/bootstrap.min.js"></script>
+  <script src="{{ site.cdn }}js/scrollIt.min.js"></script>
+  <script src="{{ site.cdn }}js/jquery.waypoints.min.js"></script>
+  <script src="{{ site.cdn }}js/owl.carousel.min.js"></script>
+  <script src="{{ site.cdn }}js/jquery.stellar.min.js"></script>
+  <script src="{{ site.cdn }}js/jquery.magnific-popup.js"></script>
+  <script src="{{ site.cdn }}js/YouTubePopUp.js"></script>
+  <script src="{{ site.cdn }}js/select2.js"></script>
+  <script src="{{ site.cdn }}js/datepicker.js"></script>
+  <script src="{{ site.cdn }}js/smooth-scroll.min.js"></script>
+  <script src="{{ site.cdn }}js/custom.js"></script>
+
+</body>
+
+</html>
